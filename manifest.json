@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "T3 Chat Search Auto-Enabler",
+  "version": "1.0",
+  "description": "Automatically re-enables the search button on t3.chat if it gets disabled.",
+  "content_scripts": [
+    {
+      "matches": ["https://t3.chat/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
