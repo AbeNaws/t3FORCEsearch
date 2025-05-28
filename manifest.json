@@ -8,7 +8,10 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://t3.chat/*"],
+      "matches": [
+        "https://t3.chat/*",
+        "https://beta.t3.chat/*"
+      ],
       "js": ["content.js"],
       "run_at": "document_idle"
     }
